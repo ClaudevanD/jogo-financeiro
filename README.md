@@ -1,0 +1,1 @@
+# jogo-financeiro, projeto simples
