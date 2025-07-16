@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Desafio Financeiro</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <main class="container">
+    <h1>Desafio Financeiro</h1>
+    <section class="status">
+      <p>Mês: <span id="mesAtual">1</span> / 12</p>
+      <p>Saldo: R$ <span id="saldo">2000.00</span></p>
+    </section>
+    <section id="evento" class="evento">
+      <p id="descricaoEvento" class="descricao"></p>
+      <div id="opcoes" class="opcoes"></div>
+    </section>
+    <button id="btnProximo" disabled>Próximo Mês</button>
+    <section id="resultado" class="resultado"></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
