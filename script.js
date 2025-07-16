@@ -113,12 +113,18 @@ function proximoMes() {
   btnProximo.disabled = true;
 
   // SALÁRIO + PROMOÇÃO
-  if (mesesPositivosSeguidos >= 3 && promocoes < 2) {
-    salario += 500;
+  if (mesAtual > 3 && mesesPositivosSeguidos >= 3 && salario < 2850) {
+  const salarioAntigo = salario;
+  salario += 500;
+  if (salario > 2850) {
+    salario = 2850;
+  }
+  if (salario !== salarioAntigo) {
     promocoes++;
-    mesesPositivosSeguidos = 0;
     mostrarMensagemPromocao();
   }
+  mesesPositivosSeguidos = 0;
+}
 
   saldo += salario;
   saldoEl.textContent = saldo.toFixed(2);
